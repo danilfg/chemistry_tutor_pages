@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { ModeProvider } from '../components/landing/ModeContext';
 import StickyHeader from '../components/landing/StickyHeader';
 import HeroSection from '../components/landing/HeroSection';
@@ -20,7 +20,12 @@ import Footer from '../components/landing/Footer';
 import { ContentProvider } from '../components/landing/ContentContext';
 
 export default function Landing() {
-  const handleSelectTariff = () => { window.location.assign('https://arsenikum.ru/'); };
+  const [selectedTariff, setSelectedTariff] = useState('');
+
+  const handleSelectTariff = (tariffName) => {
+    setSelectedTariff(tariffName);
+    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+  };
 
   return (
     <ContentProvider>
@@ -41,7 +46,7 @@ export default function Landing() {
           <ReviewsSection />
           <AboutSection />
           <FAQSection />
-          <ContactSection />
+          <ContactSection selectedTariff={selectedTariff} />
           <Footer />
         </div>
       </ModeProvider>

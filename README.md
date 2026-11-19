@@ -1,9 +1,8 @@
-# Chemistry Tutor — UI Demo
+# Chemistry Tutor
 
-Статическая демонстрация интерфейса образовательного проекта и бесплатных тренажёров по химии.
+Сайт репетитора по химии Арсении Пономаревой. Статическая резервная версия, не зависящая от backend и основного хостинга.
 
-- [GitHub Pages](https://danilfg.github.io/chemistry_tutor_pages/)
-- [Основной сайт](https://arsenikum.ru/)
+**Сайт:** https://danilfg.github.io/chemistry_tutor_pages/
 
 ## Возможности
 
@@ -13,11 +12,9 @@
 - Периодическая таблица.
 - Калькулятор молярной массы.
 - Разделение смесей.
-- Примеры экранов лендинга.
+- Информация о занятиях и прямые контакты преподавателя.
 
-Демонстрация не принимает заявки или платежи и не подключается к production API. Тарифы приведены только как примеры оформления. Актуальные данные представлены на основном сайте.
-
-## Локальная разработка
+## Разработка
 
 ```sh
 npm install
@@ -26,8 +23,6 @@ npm run build
 npm run preview
 ```
 
-React 18, Vite, Tailwind CSS, Framer Motion. Django, PostgreSQL, Base44 и production-конфигурация отсутствуют.
+React 18, Vite, Tailwind CSS, Framer Motion. Данные сайта хранятся в исходном коде; сервер, база данных, авторизация и отправка форм не требуются.
 
-## GitHub Pages
-
-В Settings → Pages выберите Source → GitHub Actions. Workflow Pages собирает и публикует папку dist при изменении ветки main. При первоначальной настройке запустите workflow вручную.
+GitHub Actions публикует статические файлы на GitHub Pages после изменений в main.

@@ -18,12 +18,12 @@ export default function PricingSection({ onSelectTariff }) {
           className="text-center mb-14"
         >
           <h2 className="font-heading font-bold text-3xl sm:text-4xl text-foreground mb-4">
-            {mode === 'student' ? 'Пример форматов обучения' : 'Пример тарифов'}
+            {mode === 'student' ? 'Выбери свой формат' : 'Стоимость занятий'}
           </h2>
           <p className="font-body text-muted-foreground text-lg max-w-2xl mx-auto">
             {mode === 'student'
-              ? 'Демонстрационные карточки интерфейса. Актуальные условия — на основном сайте.'
-              : 'Демонстрационные карточки интерфейса. Актуальные условия — на основном сайте.'}
+              ? 'От самостоятельного изучения до полной поддержки — выбирай, что тебе нужно'
+              : 'Прозрачные цены и гибкие форматы обучения'}
           </p>
         </motion.div>
 
@@ -105,7 +105,7 @@ export default function PricingSection({ onSelectTariff }) {
                     : 'bg-muted text-foreground hover:bg-primary hover:text-primary-foreground'
                 }`}
               >
-                Основной сайт
+                {t[mode].buttonText}
               </button>
             </motion.div>
           ))}

@@ -27,7 +27,7 @@ export default function StickyHeader() {
         <div className="flex items-center justify-between h-16 lg:h-20 gap-4 overflow-hidden">
           <a href="#" className="flex items-center gap-2 font-heading font-bold text-lg text-foreground whitespace-nowrap flex-shrink-0">
             <FlaskConical className="w-6 h-6 text-primary" />
-            Химия · UI Demo
+            Твой репетитор по химии
           </a>
 
           <nav className="hidden lg:flex items-center gap-6 flex-shrink-0">
@@ -45,10 +45,10 @@ export default function StickyHeader() {
           <div className="hidden lg:flex items-center gap-4 flex-shrink-0">
             <ModeToggle />
             <a
-              href="https://arsenikum.ru/"
+              href="#contact"
               className="bg-primary text-primary-foreground px-5 py-2.5 rounded-full text-sm font-body font-semibold hover:opacity-90 transition-opacity"
             >
-              Основной сайт
+              Записаться
             </a>
           </div>
 
@@ -81,11 +81,11 @@ export default function StickyHeader() {
                 </a>
               ))}
               <a
-                href="https://arsenikum.ru/"
+                href="#contact"
                 onClick={() => setMenuOpen(false)}
                 className="block text-center bg-primary text-primary-foreground px-5 py-2.5 rounded-full text-sm font-body font-semibold"
               >
-                Основной сайт
+                Записаться
               </a>
             </div>
           </motion.div>

@@ -11,7 +11,7 @@ export default function Footer() {
             А. Пономарева
           </div>
           <div className="font-body text-sm opacity-70 text-center">
-            Демонстрация UI · <a className="underline hover:opacity-100" href="https://arsenikum.ru/">Основной сайт</a>
+            Репетитор по химии · ЕГЭ, ОГЭ, ДВИ · Москва / Онлайн
           </div>
           <div className="font-body text-sm opacity-50">
             © {new Date().getFullYear()}

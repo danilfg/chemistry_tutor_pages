@@ -32,7 +32,7 @@ export default function HeroSection() {
           >
             <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-body font-medium mb-6">
               <FlaskIcon />
-              Демонстрация интерфейса
+              Репетитор по химии
             </div>
 
             <h1 className="font-heading font-bold text-4xl sm:text-5xl lg:text-6xl text-foreground leading-tight mb-6">
@@ -45,17 +45,17 @@ export default function HeroSection() {
 
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
               <a
-                href="https://arsenikum.ru/"
+                href="#contact"
                 className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-full font-body font-semibold text-base hover:opacity-90 transition-all hover:shadow-lg hover:shadow-primary/25"
               >
-                Основной сайт
+                {c.cta}
                 <ArrowRight className="w-5 h-5" />
               </a>
               <a
                 href="#pricing"
                 className="inline-flex items-center justify-center gap-2 border-2 border-border text-foreground px-8 py-4 rounded-full font-body font-semibold text-base hover:border-primary hover:text-primary transition-colors"
               >
-                Пример тарифов
+                Смотреть тарифы
                 <ChevronDown className="w-5 h-5" />
               </a>
             </div>
