@@ -1,3 +1,3 @@
-# Chemistry Tutor — UI demo
+# Chemistry Tutor — UI Demo
 
-Статическая демонстрация интерфейса образовательного проекта. Основной сайт: https://arsenikum.ru/
+Статическая демонстрация образовательного интерфейса. Основной сайт: https://arsenikum.ru/
